@@ -6,72 +6,228 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Humanities in Medicine | Washington University in St. Louis</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="stylesheets/mycustom.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-          </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar">
+
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Washington University Medicine Program for the Humanities</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><img src="img/logo.png" class="img-responsive"></li>
-              <li><a href="#"></a></li>
+              <li><a href="#classpage">Classes</a></li>
+              <li><a href="#facpage">Faculty</a></li>
+              <li><a href="#respage">Links</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"></a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <div class="page-header">
-        <h1> Humanities in Medicine | Washington University School of Medicine </h1>
+          </div>
+        </div>
       </div>
-      <div class="jumbotron">
-          <p> Welcome to brand new website for the Program for the Humanities in Medicine.</p>
+    </nav>
+    <!--end script for smooth scroll-->
+
+    <div class="container-fluid">
+      <div class="pageheader">
+        <!--Header: Logo | Program for the Humanities | WashU-->
+        <div class="row">
+          <div class="col-lg-2" >
+              <img src="img/clearlogo.png" id="headerlogo" class="img-responsive">
+          </div>
+          <div class="col-lg-10" id="headertext">
+            <h1> Humanities in Medicine | Washington University </h1>
+          </div>
+        </div>
       </div>
 
-      <div class="row">
+      <!--Jumbotron to introduce the page-->
+      <div class="jumbotron">
+          <p> Welcome to brand new website for the Program for the Humanities in Medicine: a program dedicated to providing medical students with broad exposure to areas beyond the biolocial sciences.</p>
+      </div>
+
+      <!--Main topics Faculty, Courses, Links-->
+      <div class="row" id="intropage">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <h2> Faculty </h2>
-          <p> Welcome to brand new website for the Program for the Humanities in Medicine.</p>
+          <p> Who's in Charge?</p>
           <img src="img/professor.jpg" class="img-responsive">
           <br>
-          <button class="btn btn-primary">Button</button>
+          <a class="btn btn-primary" href=#facpage> View Program Leadership</a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <h2> Courses </h2>
-          <p> Welcome to brand new website for the Program for the Humanities in Medicine.</p>
+          <p> What can you take?</p>
           <img src="img/books.jpg" class="img-responsive">
             <br>
-          <button class="btn btn-primary">Button</button>
+          <a class="btn btn-primary" href="#classpage"> Explore Courses </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-          <h2> Resources </h2>
-          <p> Welcome to brand new website for the Program for the Humanities in Medicine.</p>
+          <h2> Links </h2>
+          <p> Resources to help our students.</p>
           <img src="img/school.jpg" class="img-responsive">
             <br>
-          <button class="btn btn-primary">Button</button>
+          <a class="btn btn-primary" href="#respage"> Jump to Links</a>
         </div>
-        <hr>
     </div>
+
+    <!--Page for Class -->
+    <div class="row" id="classpage">
+        <h1> Courses </h1>
+        <br>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Dept. Code/ Course No.</th>
+                  <th> Course </th>
+                  <th> Instructor </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0005/516H</td>
+                  <td>Patient, Physician, and Drama</td>
+                  <td>Stephen S. Lefrak, Meghan Maguire</td>
+                </tr>
+                <tr>
+                  <td>0005/524H</td>
+                  <td>Major Religious Traditions</td>
+                  <td>Vic Trogdon, Solomon Kendagor</td>
+                </tr>
+                <tr>
+                    <td>0005/528H</td>
+                  <td>Terminal Illness and Death</td>
+                  <td>Ellen Binder</td>
+                </tr>
+                <tr>
+                  <td>0005/537H</td>
+                  <td>Art and Medicine</td>
+                  <td>Peter G. Tuteur</td>
+                </tr>
+                <tr>
+                  <td>0005/538H</td>
+                  <td>Doctors on Film</td>
+                  <td>Thomas M. De Fer</td>
+                </tr>
+                <tr>
+                  <td>50005/80H</td>
+                  <td>The Healer's Art</td>
+                  <td>Joan Rosenbaum, Anna Lijowska</td>
+                </tr>
+                <tr>
+                  <td>0005/581H</td>
+                  <td>Introduction to Medical Anthropology</td>
+                  <td>Priscilla Song</td>
+                </tr>
+                <tr>
+                  <td>0005/582H</td>
+                  <td>	Philosophy of Medicine</td>
+                  <td>Stephen S. Lefrak</td>
+                </tr>
+                <tr>
+                  <td>0005/586H</td>
+                  <td>Health and Human Rights</td>
+                  <td>Kim Carmichael</td>
+                </tr>
+                <tr>
+                  <td>0005/588H</td>
+                  <td>Music and Medicine</td>
+                  <td>Stan Misler, Steven Cheng</td>
+                </tr>
+                <tr>
+                  <td>0005/598H</td>
+                  <td>Bioethical Issues in Human Reproduction</td>
+                  <td>Stephen S. Lefrak, Rebecca Dresser</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+
+    <!--Page for Faculty -->
+    <div class="row" id="facpage">
+
+          <h1> Faculty Leadership</h1>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h2>Lefrak, M.D., Stephen S.</h2>
+            <p>Professor of Medicine</p>
+            <p>Program Director</p>
+            <a class="btn btn-default" href="https://wuphysicians.wustl.edu/for-patients/find-a-physician/stephen-s-lefrak" target="_blank"> More info </a>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h2>Dresser, JD, Rebecca</h2>
+            <p>Professor of Law</p>
+            <p>Assistant Director<p>
+              <a class="btn btn-default" href="http://law.wustl.edu/faculty/pages.aspx?id=226" target="_blank"> More info </a>
+          </div>
+      </div>
+
+    <!--Page for Links -->
+    <div class="row" id="respage">
+
+      <h1> Links </h1>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <h3>Midwest Bioethics - Announcement of Positions</h3>
+      <p> Job opportunity available.</p>
+
+      <p> Please submit a letter summarizing your experience, your curriculum vitae, a brief professional writing sample, and the names and addresses of three potential references. Please direct inquiries and applications to Martha Davis, Midwest Bioethics Center, 1021-1025 Jefferson Street, Kansas City, MO 64105-1329. E-mail inquiries may be directed to mdavis@midbio.org. </p>
+      <a class="btn btn-default" data-toggle="collapse" data-target="#demo">Show more</a>
+      <div id="demo" class="collapse">
+          <p>Midwest Bioethics Center is a freestanding practical bioethics center dedicated to addressing ethical issues in health and healthcare based in Kansas City, Missouri. </p>
+
+          <p>The Center is seeking candidates for Program Associates.</p>
+
+          <b>Qualifications for Program Associate.</b>
+          <p>PhD in ethics or a social science discipline (medical sociology, health policy, etc.) preferred, MD, JD, or master's degree in related field with experience considered. Must have significant content knowledge one of the above domains; strong written and oral communication skills (in English); strong planning and project management skills; and ability to administer grants according to parameters/criteria of awarding foundations or funding sources. Experience in policy research is important. Preparing and presenting information on research ethics issues to diverse audiences is a critical skill.</p>
+
+          <b>To Apply:</b>
+          <p>Please submit a letter summarizing your experience, your curriculum vitae, a brief professional writing sample, and the names and addresses of three potential references. Please direct inquiries and applications to Martha Davis, Midwest Bioethics Center, 1021-1025 Jefferson Street, Kansas City, MO 64105-1329. E-mail inquiries may be directed to mdavis@midbio.org.</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <h3> Abelson New York Times Article </h3>
+      <p>  This article will be helpful to read prior to the Integrative Case session addressing Duchenne muscular dystrophy. </p>
+      <a class="btn btn-default" href="http://www.nytimes.com/2008/07/17/business/17dystrophy.html " target="_blank"> Go to Resource </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <h3> WUSTL Assembly Series </h3>
+      <p> The Assembly Series, Washington University’s signature lecture series, enjoys a long and rich tradition. </p>
+      <a class="btn btn-default" href="http://assemblyseries.wustl.edu/" target="_blank"> Go to Resource </a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <h3> WUSTL School of Law </h3>
+      <p> Founded in 1867, the School of Law is the oldest continually operating private law school west of the Mississippi River.  </p>
+      <a class="btn btn-default" href="http://law.wustl.edu/" target="_blank"> Go to Resource </a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <h3> Brown School of Social Work </h3>
+      <p>  Social work and public health students at the Brown School are united by a passion to help others. </p>
+      <a class="btn btn-default" href="http://brownschool.wustl.edu/Pages/Home.aspx" target="_blank"> Go to Resource </a>
+    </div>
+    </div>
+
+  </div>
+  <!--Container end -->
   </body>
+  <footer>
+    <br><br>
+    <p> Department Phone Number: (314) 616-4550 </p>
+    <p> Washington University School of Medicine </p>
+  </footer>
 </html>
